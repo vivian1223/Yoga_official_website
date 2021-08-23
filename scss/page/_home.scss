@@ -1,0 +1,93 @@
+.home-logo{
+    height: 30px;
+}
+.home-nav-menu{
+    display: none;
+
+}
+
+@include tablet{
+    .home-nav-tab,.home-nav-contact{
+        display: none;
+    }
+    .home-nav-menu{
+        display: inline-block;
+        span{
+            font-size: 30px;
+        }
+    }
+}
+
+.home-banner{
+background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1612157777902-5382bc6e864b.jpeg');
+background-position:bottom;
+padding-top: 185px;
+padding-bottom: 185px;
+padding-left: 122px;
+background-size: 80%;
+@include tablet{
+    background-size: 110%;
+}
+@include mobile{
+    padding-left: 0;
+    padding-top: 175px;
+    padding-bottom: 175px;
+    background-size: 190%; 
+    background-position: center; 
+}
+}
+
+.home-sidebar-fixed{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 2;
+    @include tablet{
+        display: none;
+    }
+}
+.home-class-feature-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include mobile{
+        flex-wrap: wrap;
+    }    
+}
+.home-class-feature-banner1,.home-class-feature-banner2,.home-class-feature-banner3{
+    border-radius: 16px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    max-width: 350px;
+    height: 420px;
+    @include tablet{
+    padding: 16px;
+    max-width: 210px;
+    height: 252px;
+    }
+    @include mobile{
+        padding: 24px;
+        max-width: 345px;
+        height: 420px;
+        margin-bottom: 16px;
+    }
+
+
+}
+.home-class-feature-banner1{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1593810450967-f9c42742e326.jpeg');
+}
+.home-class-feature-banner2{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1593810451137-5dc55105dace.jpeg');
+}
+.home-class-feature-banner3{
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg');
+}
