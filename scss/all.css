@@ -1909,6 +1909,106 @@ body {
   }
 }
 
+.home-plan-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (max-width: 992px) {
+  .home-plan-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-plan-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.home-plan {
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid #C0A4A5;
+  margin-top: 24px;
+}
+
+.home-plan img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 350px;
+  height: 243px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home-plan div {
+  padding: 24px;
+}
+
+@media (max-width: 992px) {
+  .home-plan {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 690px;
+  }
+  .home-plan img {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 0;
+    width: 345px;
+    height: 238px;
+  }
+  .home-plan div {
+    width: 345px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-plan {
+    max-width: 350px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #C0A4A5;
+  }
+  .home-plan img {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 350px;
+    height: 243px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home-plan div {
+    padding: 24px;
+  }
+}
+
 .btn {
   font-weight: 700;
   padding: 8px 16px;
