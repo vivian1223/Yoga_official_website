@@ -47,7 +47,7 @@ $margin-base:(
 
 //spacing-padding 
 
-$padding-name:"1","2","3","4","5","6","7";
+$padding-name:"1","2","3","4","5","6","7","8";
 $padding-direction:"t","e","b","s";
 $padding-direction-base:(
     "t":"top",
@@ -62,7 +62,8 @@ $padding-base:(
     "4":8,
     "5":10,
     "6":12,
-    "7":14
+    "7":14,
+    "8":16
 );
 
 //spacing-width
@@ -105,7 +106,7 @@ $direciton-map:(
 
 //gird 
 
-$grid-spacer:85px;
+$grid-spacer:90px;
 $grid-name:1,2,3,4,5,6,7,8,9,10,11,12;
 
 //flex

@@ -216,89 +216,89 @@ body {
 }
 
 .col-1 {
-  width: 85px;
+  width: 90px;
 }
 
 .col-2 {
-  width: 170px;
+  width: 180px;
 }
 
 .col-3 {
-  width: 255px;
+  width: 270px;
 }
 
 .col-4 {
-  width: 340px;
+  width: 360px;
 }
 
 .col-5 {
-  width: 425px;
+  width: 450px;
 }
 
 .col-6 {
-  width: 510px;
+  width: 540px;
 }
 
 .col-7 {
-  width: 595px;
+  width: 630px;
 }
 
 .col-8 {
-  width: 680px;
+  width: 720px;
 }
 
 .col-9 {
-  width: 765px;
+  width: 810px;
 }
 
 .col-10 {
-  width: 850px;
+  width: 900px;
 }
 
 .col-11 {
-  width: 935px;
+  width: 990px;
 }
 
 .col-12 {
-  width: 1020px;
+  width: 1080px;
 }
 
 @media (max-width: 767px) {
   .col-sm-1 {
-    width: 85px;
+    width: 90px;
   }
   .col-sm-2 {
-    width: 170px;
+    width: 180px;
   }
   .col-sm-3 {
-    width: 255px;
+    width: 270px;
   }
   .col-sm-4 {
-    width: 340px;
+    width: 360px;
   }
   .col-sm-5 {
-    width: 425px;
+    width: 450px;
   }
   .col-sm-6 {
-    width: 510px;
+    width: 540px;
   }
   .col-sm-7 {
-    width: 595px;
+    width: 630px;
   }
   .col-sm-8 {
-    width: 680px;
+    width: 720px;
   }
   .col-sm-9 {
-    width: 765px;
+    width: 810px;
   }
   .col-sm-10 {
-    width: 850px;
+    width: 900px;
   }
   .col-sm-11 {
-    width: 935px;
+    width: 990px;
   }
   .col-sm-12 {
-    width: 1020px;
+    width: 1080px;
   }
 }
 
@@ -591,6 +591,10 @@ body {
   padding: 56px;
 }
 
+.p-8 {
+  padding: 64px;
+}
+
 .pt-1 {
   padding-top: 16px;
 }
@@ -617,6 +621,10 @@ body {
 
 .pt-7 {
   padding-top: 56px;
+}
+
+.pt-8 {
+  padding-top: 64px;
 }
 
 .pe-1 {
@@ -647,6 +655,10 @@ body {
   padding-right: 56px;
 }
 
+.pe-8 {
+  padding-right: 64px;
+}
+
 .pb-1 {
   padding-bottom: 16px;
 }
@@ -675,6 +687,10 @@ body {
   padding-bottom: 56px;
 }
 
+.pb-8 {
+  padding-bottom: 64px;
+}
+
 .ps-1 {
   padding-left: 16px;
 }
@@ -701,6 +717,10 @@ body {
 
 .ps-7 {
   padding-left: 56px;
+}
+
+.ps-8 {
+  padding-left: 64px;
 }
 
 .px-1 {
@@ -738,6 +758,11 @@ body {
   padding-right: 56px;
 }
 
+.px-8 {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
 .py-1 {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -771,6 +796,11 @@ body {
 .py-7 {
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+.py-8 {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .w-1 {
@@ -982,7 +1012,7 @@ body {
 }
 
 .border-radius-round {
-  border-radius: 4px;
+  border-radius: 16px;
 }
 
 .border-top-right-radius-round {
@@ -1225,7 +1255,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  .home-nav-tab, .home-nav-contact {
+  .home-nav-tab,
+  .home-nav-contact {
     display: none;
   }
   .home-nav-menu {
@@ -1263,7 +1294,7 @@ body {
 
 .home-sidebar-fixed {
   position: fixed;
-  right: 0;
+  right: 2%;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1294,7 +1325,9 @@ body {
   }
 }
 
-.home-class-feature-banner1, .home-class-feature-banner2, .home-class-feature-banner3 {
+.home-class-feature-banner1,
+.home-class-feature-banner2,
+.home-class-feature-banner3 {
   border-radius: 16px;
   height: 420px;
   background-size: cover;
@@ -1315,7 +1348,9 @@ body {
 }
 
 @media (max-width: 992px) {
-  .home-class-feature-banner1, .home-class-feature-banner2, .home-class-feature-banner3 {
+  .home-class-feature-banner1,
+  .home-class-feature-banner2,
+  .home-class-feature-banner3 {
     padding: 16px;
     max-width: 210px;
     height: 252px;
@@ -1323,7 +1358,9 @@ body {
 }
 
 @media (max-width: 767px) {
-  .home-class-feature-banner1, .home-class-feature-banner2, .home-class-feature-banner3 {
+  .home-class-feature-banner1,
+  .home-class-feature-banner2,
+  .home-class-feature-banner3 {
     padding: 24px;
     max-width: 345px;
     height: 420px;
@@ -1341,6 +1378,111 @@ body {
 
 .home-class-feature-banner3 {
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1599901860904-17e6ed7083a0.jpeg");
+}
+
+@media (max-width: 992px) {
+  .home-teacher-details-body {
+    text-align: center;
+  }
+}
+
+.home-teacher-details-banner {
+  max-width: 540px;
+  height: 628px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+  .home-teacher-details-banner {
+    display: none;
+  }
+}
+
+.home-teacher-details-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 992px) {
+  .home-teacher-details-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-teacher-details-list {
+    padding-left: 0;
+  }
+}
+
+.home-teacher-details-item {
+  width: 540px;
+  padding: 24px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.home-teacher-details-item div {
+  margin-left: 20px;
+}
+
+.home-teacher-details-item img {
+  width: 68px;
+}
+
+.home-teacher-details-item .home-teacher-details-hover {
+  display: none;
+}
+
+.home-teacher-details-item:hover {
+  width: 635px;
+  padding: 40px 48px;
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+}
+
+.home-teacher-details-item:hover img {
+  width: 94px;
+}
+
+.home-teacher-details-item:hover .home-teacher-details-hover {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  .home-teacher-details-item {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px;
+  }
+  .home-teacher-details-item:hover {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    width: 100%;
+    padding: 16px;
+  }
+  .home-teacher-details-item:hover img {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 .btn {
