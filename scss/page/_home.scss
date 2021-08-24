@@ -112,7 +112,6 @@
 }
 .home-teacher-details-list {
     padding-top: 24px;
-    padding-bottom: 24px;
     @include tablet{
         display: flex;
         flex-direction: column;
@@ -168,4 +167,44 @@
       }
     
   }
+}
+
+.home-enviroment-intro{
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    @include mobile{
+        flex-direction: column-reverse;
+    }
+
+}
+
+.home-enviroment-intro-banner1,.home-enviroment-intro-banner2,.home-enviroment-intro-banner3{
+    border-radius: 16px;
+    object-fit: cover;
+}
+.home-enviroment-intro-banner1{
+    max-width: 350px;
+    height: 444px;
+     @include tablet{
+        max-width: 210px;
+        height: 266px;
+     }
+     @include mobile{
+         display: none;
+     }
+
+}
+
+.home-enviroment-intro-banner2,.home-enviroment-intro-banner3{
+    width: 160px;
+    height: 207px;
+    @include tablet{
+        width: 90px;
+        height: 117px;
+     }
+     @include mobile{
+        width: 165px;
+        height:210px;
+     }
 }

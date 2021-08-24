@@ -3,13 +3,23 @@
 .flex-column{
     flex-direction: column;
 }
+
+@include mobile{
+    .flex-sm-row{
+        flex-direction: row;
+    }
+}
 //justify-content
 @each $way in $flex-list {
     .justify-content-#{$way}{
         justify-content: map-get($flex-map, $way);
     }
 };
-
+@include mobile{
+    .justify-content-sm-between{
+        justify-content: space-between;
+    }
+}
 //align-items
 @each $way in $flex-list {
     .align-items-#{$way}{
