@@ -304,3 +304,26 @@
     }
     }
 }
+.home-feedback-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include tablet{
+        width: 1110px;
+    }
+    @include mobile{
+        display: none;
+    }
+}
+.home-feedback{
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: $white;
+    padding: 14px 16px;
+    width: 350px;
+    margin-bottom: 16px;
+    @include tablet{
+        flex-shrink: 0;
+    }
+}

@@ -199,7 +199,7 @@
         </div>
         <!-- 課程介紹結束 -->
         <!-- 方案選擇開始 -->
-        <div class="container pt-5 pb-3">
+        <div class="container py-5">
             <h2 class="font-medium fs-5 text-center font-secondary">方案選擇</h2>
             <p class="fs-3 text-center  font-primary font-regular">DOYOGA 可以帶給你...</p>
             <ul class="home-plan-list">
@@ -233,6 +233,25 @@
             </ul>
         </div>
         <!-- 方案選擇結束 -->
+        <!-- 顧客推薦開始 -->
+        <div class="bg-light py-5">
+            <div class="container overflowx-scroll">
+                <h2 class="fs-5 font-secondary text-center mb-7">聽聽他們怎麼說</h2>
+                <ul class="home-feedback-list">
+                    <li v-for="feedback in feedbackList" class="home-feedback">
+                        <img :src="feedback.imgUrl" alt="User picture">
+                        <div class="ms-4">
+                            <p class="fs-1 font-secondary">{{`${feedback.name}  ${feedback.date}`}}</p>
+                            <p class="font-primary"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="font-secondary">{{feedback.comment}}</p>
+                        </div>
+                    </li>
+    
+                </ul>
+            </div>
+            
+        </div>
+        <!-- 顧客推薦結束 -->
 
 
     </div>

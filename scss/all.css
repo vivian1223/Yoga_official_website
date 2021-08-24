@@ -2009,6 +2009,50 @@ body {
   }
 }
 
+.home-feedback-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .home-feedback-list {
+    width: 1110px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-feedback-list {
+    display: none;
+  }
+}
+
+.home-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 14px 16px;
+  width: 350px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 992px) {
+  .home-feedback {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
 .btn {
   font-weight: 700;
   padding: 8px 16px;
