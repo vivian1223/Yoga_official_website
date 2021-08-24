@@ -13,6 +13,16 @@
     }
 };
 
+@include tablet{
+    @each $direction in $margin-direction {
+        @each $name in $margin-name {
+            .m#{$direction}-md-#{$name}{
+                margin-#{map-get($margin-direction-base, $direction)}: $spacer *  map-get($margin-base, $name);
+            }
+        }
+    };
+}
+
 @include mobile{
     @each $direction in $margin-direction {
         @each $name in $margin-name {
@@ -40,6 +50,7 @@
 .-ms-1{
     margin-left: -1px;
 }    
+
 
 @include mobile{
     .mx-sm-0{

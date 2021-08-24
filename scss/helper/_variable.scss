@@ -26,7 +26,7 @@ $margin-direction:"t","e","b","s";
 
 //spacing-margin
 
-$margin-name:"1","2","3","4","5","6","7","8";
+$margin-name:"none","1","2","3","4","5","6","7","8";
 
 $margin-direction-base:(
     "t":"top",
@@ -35,6 +35,7 @@ $margin-direction-base:(
     "s":"left"
 );
 $margin-base:(
+    "none":0,
     "1":1,
     "2":2,
     "3":4,

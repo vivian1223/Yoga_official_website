@@ -4,9 +4,13 @@
     flex-direction: column;
 }
 
+
 @include mobile{
     .flex-sm-row{
         flex-direction: row;
+    }
+    .flex-sm-column{
+        flex-direction: column;
     }
 }
 //justify-content
@@ -16,8 +20,10 @@
     }
 };
 @include mobile{
-    .justify-content-sm-between{
-        justify-content: space-between;
+    @each $way in $flex-list {
+        .justify-content-sm-#{$way}{
+            justify-content: map-get($flex-map, $way);
+        }
     }
 }
 //align-items
@@ -45,3 +51,4 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
+

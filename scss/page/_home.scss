@@ -94,32 +94,30 @@
 
 //頂級師資
 
-.home-teacher-details-body{
-    @include tablet{
-     text-align: center;     
-    
-    }
-    
+.home-teacher-details-body {
+  @include tablet {
+    text-align: center;
+  }
 }
 .home-teacher-details-banner {
   max-width: 540px;
   height: 628px;
   object-fit: cover;
   border-radius: 16px;
-  @include tablet{
-      display: none;
+  @include tablet {
+    display: none;
   }
 }
 .home-teacher-details-list {
-    padding-top: 24px;
-    @include tablet{
-        display: flex;
-        flex-direction: column;
-        padding-left: 120px;
-    }
-    @include mobile{
-        padding-left: 0;
-    }
+  padding-top: 24px;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+  }
+  @include mobile {
+    padding-left: 0;
+  }
 }
 
 .home-teacher-details-item {
@@ -151,60 +149,96 @@
       display: inline-block;
     }
   }
-  @include mobile{
-      width: 100%;
-      align-items: center;
-      padding: 16px;
+  @include mobile {
+    width: 100%;
+    align-items: center;
+    padding: 16px;
 
-      &:hover{
-         transform: translateX(0); 
-         width: 100%;
-         padding: 16px;
-         img {
-           width: 48px;
-           height: 48px;
-         }
+    &:hover {
+      transform: translateX(0);
+      width: 100%;
+      padding: 16px;
+      img {
+        width: 48px;
+        height: 48px;
       }
-    
+    }
   }
 }
 
-.home-enviroment-intro{
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    @include mobile{
-        flex-direction: column-reverse;
-    }
-
+.home-enviroment-intro {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 
-.home-enviroment-intro-banner1,.home-enviroment-intro-banner2,.home-enviroment-intro-banner3{
+.home-enviroment-intro-banner1,
+.home-enviroment-intro-banner2,
+.home-enviroment-intro-banner3 {
+  border-radius: 16px;
+  object-fit: cover;
+}
+.home-enviroment-intro-banner1 {
+  max-width: 350px;
+  height: 444px;
+  @include tablet {
+    max-width: 210px;
+    height: 266px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.home-enviroment-intro-banner2,
+.home-enviroment-intro-banner3 {
+  width: 160px;
+  height: 207px;
+  @include tablet {
+    width: 90px;
+    height: 117px;
+  }
+  @include mobile {
+    width: 165px;
+    height: 210px;
+  }
+}
+
+.home-course-intro-banner {
+  flex-shrink: 0;
+  img {
     border-radius: 16px;
+    width: 445px;
+    height: 445px;
     object-fit: cover;
+  }
+  @include tablet {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
 }
-.home-enviroment-intro-banner1{
-    max-width: 350px;
-    height: 444px;
-     @include tablet{
-        max-width: 210px;
-        height: 266px;
-     }
-     @include mobile{
-         display: none;
-     }
-
+.home-course-intro-list-tablet,
+.home-course-intro-list-mobile {
+  display: none;
 }
+.home-course-intro-list-pc {
+  width: 540px;
+  @include tablet {
+    display: none;
+  }
+}
+.home-course-intro-list-tablet {
+  width: 360px;
+  ul{
+    flex-wrap: wrap; 
+ }
 
-.home-enviroment-intro-banner2,.home-enviroment-intro-banner3{
-    width: 160px;
-    height: 207px;
-    @include tablet{
-        width: 90px;
-        height: 117px;
-     }
-     @include mobile{
-        width: 165px;
-        height:210px;
-     }
+  @include tablet {
+    display: inline-block;
+  }
 }
