@@ -3,7 +3,11 @@
 .flex-column{
     flex-direction: column;
 }
-
+@include tablet{
+    .flex-md-column{
+        flex-direction: column;
+    }
+}
 
 @include mobile{
     .flex-sm-row{
@@ -13,6 +17,8 @@
         flex-direction: column;
     }
 }
+
+
 //justify-content
 @each $way in $flex-list {
     .justify-content-#{$way}{
@@ -32,6 +38,14 @@
         align-items: map-get($flex-map, $way);
     }
 };
+
+@include tablet{
+    @each $way in $flex-list {
+        .align-items-md-#{$way}{
+            align-items: map-get($flex-map, $way);
+        }
+    };
+}
 
 @include mobile{
     @each $way in $flex-list {
@@ -59,4 +73,6 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
+
+//flex-shi
 

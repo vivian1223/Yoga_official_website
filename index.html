@@ -204,7 +204,8 @@
             <p class="fs-3 text-center  font-primary font-regular">DOYOGA 可以帶給你...</p>
             <ul class="home-plan-list">
                 <li class="home-plan">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg" alt="Plan Picture">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20white%20tank%20top%20and%20white%20leggings%20bending%20her%20body.jpg"
+                        alt="Plan Picture">
                     <div>
                         <h2 class="fs-3 font-secondary text-center mb-1">首次體驗</h2>
                         <p class="fs-3 font-primary text-center mb-2">NT $450 / 次</p>
@@ -213,7 +214,8 @@
                     </div>
                 </li>
                 <li class="home-plan">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20performing%20yoga.jpg" alt="Plan Picture">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20performing%20yoga.jpg"
+                        alt="Plan Picture">
                     <div>
                         <h2 class="fs-3 font-secondary text-center mb-1">短期體驗</h2>
                         <p class="fs-3 font-primary text-center mb-2">NT $1800 / 月</p>
@@ -222,7 +224,8 @@
                     </div>
                 </li>
                 <li class="home-plan">
-                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg" alt="Plan Picture">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/woman%20in%20blue%20leggings%20and%20black%20tank%20top%20doing%20yoga.jpg"
+                        alt="Plan Picture">
                     <div>
                         <h2 class="fs-3 font-secondary text-center mb-1">長期體驗</h2>
                         <p class="fs-3 font-primary text-center mb-2">NT $5600 / 季</p>
@@ -241,8 +244,10 @@
                     <li v-for="feedback in feedbackList" class="home-feedback">
                         <img :src="feedback.imgUrl" alt="User picture">
                         <div class="ms-4">
-                            <p class="fs-1 font-secondary">{{`${feedback.name}  ${feedback.date}`}}</p>
-                            <p class="font-primary"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                            <p class="fs-1 font-secondary">{{`${feedback.name} ${feedback.date}`}}</p>
+                            <p class="font-primary"><i class="fas fa-star"></i><i class="ms-1 fas fa-star"></i><i
+                                    class="ms-1 fas fa-star"></i><i class="ms-1 fas fa-star"></i><i
+                                    class="ms-1 fas fa-star"></i></p>
                             <p class="font-secondary">{{feedback.comment}}</p>
                         </div>
                     </li>
@@ -252,23 +257,77 @@
                         <li v-for="pageItem in homeFeedbackPageList" class="home-feedback">
                             <img :src="pageItem.imgUrl" alt="User picture">
                             <div class="ms-4">
-                                <p class="fs-1 font-secondary">{{`${pageItem.name}  ${pageItem.date}`}}</p>
-                                <p class="font-primary"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="fs-1 font-secondary">{{`${pageItem.name} ${pageItem.date}`}}</p>
+                                <p class="font-primary"><i class="fas fa-star"></i><i class="ms-1 fas fa-star"></i><i
+                                        class="ms-1  fas fa-star"></i><i class="ms-1 fas fa-star"></i><i
+                                        class="ms-1 fas fa-star"></i></p>
                                 <p class="font-secondary">{{pageItem.comment}}</p>
                             </div>
                         </li>
                     </ul>
-                    <div class="d-flex justify-content-end"  v-if="!homeFeedbackPageStatus" >
-                        <a @click.prevent="showNextFeedbackPage" href="" class="link-secondary"><i class="fs-5 fas fa-arrow-right"></i></a>
+                    <div class="d-flex justify-content-end" v-if="!homeFeedbackPageStatus">
+                        <a @click.prevent="showNextFeedbackPage" href="" class="link-secondary"><i
+                                class="fs-5 fas fa-arrow-right"></i></a>
                     </div>
-                    <div class="d-flex justify-content-start" v-if="homeFeedbackPageStatus" >
-                        <a  @click.prevent="showPreFeedbackPage" href="" class="link-secondary"><i class="fs-5 fas fa-arrow-left"></i></a>
-                        
+                    <div class="d-flex justify-content-start" v-if="homeFeedbackPageStatus">
+                        <a @click.prevent="showPreFeedbackPage" href="" class="link-secondary"><i
+                                class="fs-5 fas fa-arrow-left"></i></a>
+
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
         <!-- 顧客推薦結束 -->
+        <footer class="bg-secondary">
+            <div class="border-bottom-white py-4">
+                <div class="container d-flex justify-content-between align-items-center flex-md-column align-items-md-start mb-md-2">
+                    <h2 class="fs-5 font-white">現在訂閱，獲得課程優惠碼！</h2>
+                    <div class="home-footer-email">
+                        <input type="text" placeholder="輸入您的電子信箱">
+                        <a href="#">訂閱</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container home-footer-moreInfo-pc py-4">
+                <div>
+                    <h3><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></h3>
+                    <ul>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
+                    </ul>
+                </div>
+                <p class="font-white align-self-end">
+                    © 2021. All Rights Reserved.
+                </p>
+                <ul class="d-flex">
+                    <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
+                </ul>
+            </div>
+            <div class="container home-footer-moreInfo-mobile  py-4">
+                <div>
+                    <h3><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></h3>
+                    <ul>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
+                    </ul>
+                    <p class="font-white mt-2">
+                        © 2021. All Rights Reserved.
+                    </p>
+                </div>
+                <ul class="d-flex">
+                    <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
+                </ul>
+            </div>
+
+        </footer>
 
 
     </div>
