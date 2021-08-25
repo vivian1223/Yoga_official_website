@@ -1678,8 +1678,8 @@ body {
 @media (max-width: 767px) {
   .home-banner {
     padding-left: 0;
-    padding-top: 175px;
-    padding-bottom: 175px;
+    padding-top: 160px;
+    padding-bottom: 160px;
     background-size: 190%;
     background-position: center;
   }
