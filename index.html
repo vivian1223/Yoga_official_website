@@ -235,7 +235,7 @@
         <!-- 方案選擇結束 -->
         <!-- 顧客推薦開始 -->
         <div class="bg-light py-5">
-            <div class="container overflowx-scroll">
+            <div class="container overflowx-scroll d-sm-flex flex-sm-column align-items-sm-center">
                 <h2 class="fs-5 font-secondary text-center mb-7">聽聽他們怎麼說</h2>
                 <ul class="home-feedback-list">
                     <li v-for="feedback in feedbackList" class="home-feedback">
@@ -246,10 +246,27 @@
                             <p class="font-secondary">{{feedback.comment}}</p>
                         </div>
                     </li>
-    
                 </ul>
-            </div>
-            
+                <div class="home-feedback-mobile">
+                    <ul class="home-feedback-list-mobile">
+                        <li v-for="pageItem in homeFeedbackPageList" class="home-feedback">
+                            <img :src="pageItem.imgUrl" alt="User picture">
+                            <div class="ms-4">
+                                <p class="fs-1 font-secondary">{{`${pageItem.name}  ${pageItem.date}`}}</p>
+                                <p class="font-primary"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                <p class="font-secondary">{{pageItem.comment}}</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-end"  v-if="!homeFeedbackPageStatus" >
+                        <a @click.prevent="showNextFeedbackPage" href="" class="link-secondary"><i class="fs-5 fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="d-flex justify-content-start" v-if="homeFeedbackPageStatus" >
+                        <a  @click.prevent="showPreFeedbackPage" href="" class="link-secondary"><i class="fs-5 fas fa-arrow-left"></i></a>
+                        
+                    </div>
+                </div>
+            </div> 
         </div>
         <!-- 顧客推薦結束 -->
 

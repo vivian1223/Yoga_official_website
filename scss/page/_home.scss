@@ -295,6 +295,7 @@
     img{
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
+        border-bottom-left-radius: 0;
         width:350px;
         height: 243px;
         object-fit: cover;
@@ -326,4 +327,17 @@
     @include tablet{
         flex-shrink: 0;
     }
+}
+.home-feedback-mobile{
+    display:none;
+    @include mobile{
+        display: inline-block;
+    }
+}
+
+.home-feedback-list-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
 }

@@ -32,6 +32,14 @@
         align-items: map-get($flex-map, $way);
     }
 };
+
+@include mobile{
+    @each $way in $flex-list {
+        .align-items-sm-#{$way}{
+            align-items: map-get($flex-map, $way);
+        }
+    };
+}
 //align-self
 
 @each $way in $flex-list {

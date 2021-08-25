@@ -5,3 +5,9 @@
 .d-block{
     display: block;
 }
+
+@include mobile{
+    .d-sm-flex{
+        display: flex;
+    }
+}
