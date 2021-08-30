@@ -19,13 +19,13 @@
         <!-- 表頭開始 -->
         <nav class="bg-light py-1">
             <div class="container d-flex justify-content-between align-items-center">
-                <a href="#">
+                <a href="#" @click.prevent="showHomePage">
                     <img class="home-logo"
                         src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA-logo.png"
                         alt="logo">
                 </a>
                 <ul class="d-flex home-nav-tab">
-                    <li><a href="#" class="link-info font-light ms-7">課程介紹</a></li>
+                    <li><a @click.prevent="showCourseIntroPage" href="#" class="link-info font-light ms-7">課程介紹</a></li>
                     <li><a href="#" class="link-info font-light ms-7">瑜珈空間</a></li>
                     <li><a href="#" class="link-info font-light ms-7">當月課表</a></li>
                 </ul>
@@ -40,7 +40,9 @@
             </div>
         </nav>
         <!-- 表頭結束 -->
-        <!-- 首頁banner開始 -->
+        <!-- 首頁開始 -->
+        <div v-if="homePageStatus">
+            <!-- 首頁banner開始 -->
         <div class="home-banner">
             <div class="container  d-flex flex-column">
                 <div class="col-4 col-sm-3">
@@ -278,6 +280,34 @@
             </div>
         </div>
         <!-- 顧客推薦結束 -->
+        </div>
+        <!-- 首頁結束 -->
+        
+
+
+        <!-- 課程介紹開始 -->
+        <div v-if="courseIntroPageStatus ">
+            <div class="container py-8 py-sm-6">
+                <h1 class="fs-5 font-secondary text-center mb-7">課程介紹</h1>
+                <div class="d-flex justify-content-center flex-sm-column flex-sm-wrap align-items-sm-center">
+                    <img class="course-intro-banner"src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/photo-1540206276207-3af25c08abc4.jpeg" alt="Course intro picture">
+                    <div class="col-4 ms-6 ms-sm-none">
+                        <h2 class="fs-5 font-secondary font-medium">本月限定課程 - 空中瑜珈</h2>
+                        <p class="font-primary mb-3">授課老師：Carol Tang<span class="course-intro-time-hint">60min</span></p>
+                        <p class="font-secondary mb-5">使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>
+                            藉由地心引力的重力原理<br>
+                            鍛鍊核心肌群，舒緩脊椎壓力<br>
+                            訓練身體協調性，深層放鬆身體<br>
+                            課堂裡老師會視同學狀況安排教導倒立動作<br>
+                            對於不敢嘗試倒立的同學來說<br>
+                            藉由掛布的支持與保護 加上老師細心指導，讓同學能更快掌握</p>
+                        <a href="#" class="btn btn-primary">立即預約</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 課程介紹結束 -->
+        <!-- footer開始 -->
         <footer class="bg-secondary">
             <div class="border-bottom-white py-4">
                 <div class="container d-flex justify-content-between align-items-center flex-md-column align-items-md-start mb-md-2">
@@ -290,10 +320,10 @@
             </div>
             <div class="container home-footer-moreInfo-pc py-4">
                 <div>
-                    <h3><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-                            alt="Logo"></h3>
+                    <a href="#"  @click.prevent="showHomePage"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></a>
                     <ul>
-                        <li class="mt-2"><a href="#" class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a @click.prevent="showCourseIntroPage"  href="#" class="link-white  font-light">課程介紹</a></li>
                         <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
                         <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
                     </ul>
@@ -309,10 +339,10 @@
             </div>
             <div class="container home-footer-moreInfo-mobile  py-4">
                 <div>
-                    <h3><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-                            alt="Logo"></h3>
+                    <a href="#"  @click.prevent="showHomePage"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></a>
                     <ul>
-                        <li class="mt-2"><a href="#" class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a @click.prevent="showCourseIntroPage"  href="#" class="link-white  font-light">課程介紹</a></li>
                         <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
                         <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
                     </ul>
@@ -328,7 +358,7 @@
             </div>
 
         </footer>
-
+        <!-- footer結束 -->
 
     </div>
     <script src="https://unpkg.com/vue@next"></script>

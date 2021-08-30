@@ -1,0 +1,24 @@
+.course-intro-banner {
+  width: 540px;
+  height: 341px;
+  object-fit: cover;
+  border-radius: 16px;
+  @include tablet {
+    width: 330px;
+    height: 341px;
+  }
+  @include mobile {
+    width: 345px;
+    height: 378px;
+    margin-bottom: 8px;
+  }
+}
+
+.course-intro-time-hint {
+  color: $white;
+  padding: 4px 16px;
+  border-radius: 16px;
+  margin-left: 6px;
+  background-color: $secondary;
+  font-size: 14px;
+}

@@ -35,6 +35,19 @@
         }
     }
 }
+@each $color in $color-list {
+    .btn-#{$color}{
+        color: $white;
+        border: 1px transparent solid;
+        background-color:map-get($color-map,$color);
+        padding: $spacer*1  $spacer *6 ;
+        &:hover{
+            border: 1px map-get($color-map,$color) solid;
+            background-color:$white;
+            color: map-get($color-map,$color);
+        }
+    }
+}
 
 //例外
 .btn-light{

@@ -4,6 +4,8 @@ const app = Vue.createApp({
      
         homeFeedbackPageStatus: 0,
         homeFeedbackPageList:[],
+        homePageStatus:true,
+        courseIntroPageStatus:false,
 
       feedbackList: [
         {
@@ -66,6 +68,16 @@ const app = Vue.createApp({
     showPreFeedbackPage(){
         this.homeFeedbackPageStatus = 0;
         this.homeFeedbackPageList= this.feedbackList.filter((item, index) => Math.floor(index / 3) === 0);
+    },
+    showCourseIntroPage(){
+      this.homePageStatus = false;
+      this.courseIntroPageStatus = true;
+      location.hash = 'courseIntro';
+    },
+    showHomePage(){
+      this.courseIntroPageStatus = false;
+      this.homePageStatus = true;
+      location.hash = 'home';
     }
   },
   created() {

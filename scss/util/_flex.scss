@@ -72,7 +72,11 @@
 
 .flex-wrap{
     flex-wrap: wrap;
-}
+};
+@include mobile {
+    .flex-sm-wrap{
+        flex-wrap: wrap;
+}}
 
 //flex-shi
 
