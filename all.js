@@ -6,6 +6,8 @@ const app = Vue.createApp({
         homeFeedbackPageList:[],
         homePageStatus:true,
         courseIntroPageStatus:false,
+        spacePageStatus:false,
+        modalStatus:false,
 
       feedbackList: [
         {
@@ -70,14 +72,32 @@ const app = Vue.createApp({
         this.homeFeedbackPageList= this.feedbackList.filter((item, index) => Math.floor(index / 3) === 0);
     },
     showCourseIntroPage(){
+      this.spacePageStatus = false;
       this.homePageStatus = false;
       this.courseIntroPageStatus = true;
       location.hash = 'courseIntro';
     },
     showHomePage(){
+      this.spacePageStatus = false;
       this.courseIntroPageStatus = false;
       this.homePageStatus = true;
       location.hash = 'home';
+    },
+    showSpacePage(){
+      this.homePageStatus = false;
+      this.courseIntroPageStatus = false;
+      this.spacePageStatus = true;
+    },
+    showModal() {
+      document.documentElement.scrollTop = 0;
+      document.documentElement.style.overflow = 'hidden';
+      
+      this.modalStatus = true;
+      console.log('click')
+    },
+    exitModal(){
+      this.modalStatus = false;
+      document.documentElement.style.overflow = 'scroll';
     }
   },
   created() {

@@ -90,5 +90,9 @@
         flex-wrap: wrap;
 }}
 
-//flex-shi
+//flex-shrink
+
+.flex-shrink-none{
+    flex-shrink: unset;
+}
 

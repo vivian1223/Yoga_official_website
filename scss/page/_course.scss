@@ -130,29 +130,71 @@
   }
 }
 
-.course-instructor-card{
-    position: relative;
-    border-radius: 16px;
-    background: $secondary;
-    width: 350px;
-    color: $white;
-    padding: 72px  24px;
-    flex-shrink: 0;
-    &:nth-child(odd){
-        background: $primary;
-        img{
-            border: 4px solid $secondary;
-        }
-        
+.course-instructor-card {
+  position: relative;
+  border-radius: 16px;
+  background: $secondary;
+  width: 350px;
+  color: $white;
+  padding: 72px 24px;
+  flex-shrink: 0;
+  &:nth-child(odd) {
+    background: $primary;
+    img {
+      border: 4px solid $secondary;
     }
-    img{
-        position: absolute;
-        top:0;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border: 4px solid $primary;
-        border-radius: 50px;
-        width: 96px;
-    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid $primary;
+    border-radius: 50px;
+    width: 96px;
+  }
+}
+.course-modal-bg-dark {
+  background-color: rgba(#000, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 
+.course-modal {
+  background: $primary;
+  padding: 32px 64px 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 16px;
+  width: 920px;
+  @include tablet {
+    width: 690px;
+  }
+
+  @include mobile {
+    width: 345px;
+    padding: 16px 32px 16px;
+  }
+}
+
+.course-modal-banner {
+  width: 418px;
+  height: 418px;
+  object-fit: cover;
+  border-radius: 16px;
+  @include tablet {
+    width: 264px;
+  }
+  @include mobile {
+    width: 165px;
+    height: 165px;
+    margin-bottom: 16px;
+  }
 }

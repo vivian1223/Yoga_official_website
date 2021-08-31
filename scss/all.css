@@ -1198,6 +1198,12 @@ body {
   height: 140px;
 }
 
+.h-max {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .border-primary {
   border: 1px #C0A4A5 solid;
 }
@@ -1673,6 +1679,11 @@ body {
   }
 }
 
+.flex-shrink-none {
+  -ms-flex-negative: unset;
+      flex-shrink: unset;
+}
+
 .link-primary {
   color: #C0A4A5;
 }
@@ -1763,6 +1774,10 @@ body {
 
 .overflowx-scroll {
   overflow-x: scroll;
+}
+
+.overflowHidden {
+  overflow: hidden;
 }
 
 .home-logo {
@@ -2554,7 +2569,7 @@ body {
   background: #907A7B;
   width: 350px;
   color: #fff;
-  padding: 72px  24px;
+  padding: 72px 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -2576,6 +2591,158 @@ body {
   border: 4px solid #C0A4A5;
   border-radius: 50px;
   width: 96px;
+}
+
+.course-modal-bg-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.course-modal {
+  background: #C0A4A5;
+  padding: 32px 64px 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 16px;
+  width: 920px;
+}
+
+@media (max-width: 992px) {
+  .course-modal {
+    width: 690px;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-modal {
+    width: 345px;
+    padding: 16px 32px 16px;
+  }
+}
+
+.course-modal-banner {
+  width: 418px;
+  height: 418px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+  .course-modal-banner {
+    width: 264px;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-modal-banner {
+    width: 165px;
+    height: 165px;
+    margin-bottom: 16px;
+  }
+}
+
+.space-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .space-card-list {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .space-card-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.space-card {
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 24px;
+  color: #fff;
+  background-size: cover;
+  border-radius: 16px;
+  background-position: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .space-card {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+.space-card h2 {
+  font-size: 28px;
+}
+
+.space-card-1 {
+  background-image: url("https://images.unsplash.com/photo-1616940779493-6958fbd615fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80");
+  width: 729px;
+  height: 350px;
+}
+
+@media (max-width: 992px) {
+  .space-card-1 {
+    width: 450px;
+    height: 216px;
+  }
+}
+
+.space-card-2 {
+  background-image: url("https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+}
+
+.space-card-3 {
+  background-image: url("https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+}
+
+.space-card-4 {
+  background-image: url("https://images.unsplash.com/photo-1600881333168-2ef49b341f30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80");
+}
+
+.space-card-5 {
+  background-image: url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1526&q=80");
+}
+
+@media (max-width: 767px) {
+  .space-card {
+    width: 345px;
+    height: 350px;
+  }
 }
 
 .btn {
@@ -2829,14 +2996,14 @@ body {
 }
 
 .btn-light {
-  color: #707070;
+  color: #907A7B;
   border: 1px solid #F5F0E7;
   background: #F5F0E7;
 }
 
 .btn-light:hover {
-  background: #707070;
-  border: 1px solid #707070;
+  background: #907A7B;
+  border: 1px solid #907A7B;
   color: #F5F0E7;
 }
 

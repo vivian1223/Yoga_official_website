@@ -51,12 +51,12 @@
 
 //例外
 .btn-light{
-    color: $dark;
+    color: $secondary;
     border: 1px solid $light;
     background: $light;
     &:hover{
-        background: $dark;
-        border: 1px solid $dark;
+        background: $secondary;
+        border: 1px solid $secondary;
         color: $light;
     }
 }
