@@ -2745,6 +2745,26 @@ body {
   }
 }
 
+.space-recommend-card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.space-recommend-card-list li {
+  margin-right: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.space-recommend-card-list li img {
+  width: 255px;
+  height: 196px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
 .btn {
   font-weight: 700;
   padding: 8px 16px;

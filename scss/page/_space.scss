@@ -61,3 +61,16 @@
     height: 350px;
   }
 }
+.space-recommend-card-list{
+    display: flex;
+    li{
+        margin-right: 30px;
+        flex-shrink: 0;
+        img{
+            width: 255px;
+            height: 196px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+    }
+}
