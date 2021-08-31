@@ -25,6 +25,13 @@
         justify-content: map-get($flex-map, $way);
     }
 };
+@include tablet{
+    @each $way in $flex-list {
+        .justify-content-md-#{$way}{
+            justify-content: map-get($flex-map, $way);
+        }
+    }
+}
 @include mobile{
     @each $way in $flex-list {
         .justify-content-sm-#{$way}{
@@ -73,6 +80,11 @@
 .flex-wrap{
     flex-wrap: wrap;
 };
+@include tablet{
+    .flex-md-wrap{
+        flex-wrap: wrap;
+}
+}
 @include mobile {
     .flex-sm-wrap{
         flex-wrap: wrap;

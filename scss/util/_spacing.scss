@@ -46,11 +46,23 @@
             margin-bottom: $spacer *  map-get($margin-base, $name);
         }
     };
+@include mobile{
+    @each $name in $margin-name {
+        .my-sm-#{$name}{
+            margin-top: $spacer *  map-get($margin-base, $name);
+            margin-bottom: $spacer *  map-get($margin-base, $name);
+        }
+    };
+}
 
 .-ms-1{
     margin-left: -1px;
 }    
-
+@include tablet{
+    .mx-sm-auto{
+        margin: 0 auto;
+    }
+}
 
 @include mobile{
     .mx-sm-0{
