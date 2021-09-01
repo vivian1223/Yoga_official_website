@@ -6,6 +6,10 @@
     display: block;
 }
 
+.d-line-block{
+    display: inline-block;
+}
+
 @include mobile{
     .d-sm-flex{
         display: flex;

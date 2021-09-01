@@ -58,6 +58,10 @@
 .-ms-1{
     margin-left: -1px;
 }    
+
+.mx-auto{
+    margin: 0 auto;
+}
 @include tablet{
     .mx-sm-auto{
         margin: 0 auto;
@@ -112,6 +116,9 @@
     .w-#{$name}{
         width: $width-spacer * $name;
     }
+}
+.w-max{
+    width: max-content;
 }
 
 //height 

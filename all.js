@@ -8,6 +8,7 @@ const app = Vue.createApp({
         courseIntroPageStatus:false,
         spacePageStatus:false,
         modalStatus:false,
+        curriculumStatus:false,
 
       feedbackList: [
         {
@@ -74,18 +75,21 @@ const app = Vue.createApp({
     showCourseIntroPage(){
       this.spacePageStatus = false;
       this.homePageStatus = false;
+      this.curriculumStatus = false;
       this.courseIntroPageStatus = true;
       location.hash = 'courseIntro';
     },
     showHomePage(){
       this.spacePageStatus = false;
       this.courseIntroPageStatus = false;
+      this.curriculumStatus = false;
       this.homePageStatus = true;
       location.hash = 'home';
     },
     showSpacePage(){
       this.homePageStatus = false;
       this.courseIntroPageStatus = false;
+      this.curriculumStatus = false;
       this.spacePageStatus = true;
     },
     showModal() {
@@ -98,6 +102,12 @@ const app = Vue.createApp({
     exitModal(){
       this.modalStatus = false;
       document.documentElement.style.overflow = 'scroll';
+    },
+    showCurriculumPage(){
+      this.homePageStatus = false;
+      this.courseIntroPageStatus = false;
+      this.spacePageStatus = false;
+      this.curriculumStatus = true;
     }
   },
   created() {

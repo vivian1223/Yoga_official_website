@@ -27,7 +27,7 @@
                 <ul class="d-flex home-nav-tab">
                     <li><a @click.prevent="showCourseIntroPage" href="#" class="link-info font-light ms-7">課程介紹</a></li>
                     <li><a @click.prevent="showSpacePage" href="#" class="link-info font-light ms-7">瑜珈空間</a></li>
-                    <li><a href="#" class="link-info font-light ms-7">當月課表</a></li>
+                    <li><a @click.prevent="showCurriculumPage" href="#" class="link-info font-light ms-7">當月課表</a></li>
                 </ul>
                 <ul class="d-flex home-nav-contact">
 
@@ -58,13 +58,6 @@
                 </div>
             </div>
             <!-- 首頁banner結束 -->
-            <!-- 右側釘選社群開始 -->
-            <ul class="home-sidebar-fixed">
-                <li><a href="#" class="link-secondary"><i class="fab fa-facebook fs-7 mb-2"></i></a></li>
-                <li><a href="#" class="link-secondary"><i class="fab fa-instagram fs-7 mb-2"></i></a></li>
-                <li><a href="#" class="link-secondary"><i class="fab fa-line fs-7 mb-2"></i></a></li>
-            </ul>
-            <!-- 右側釘選社群結束 -->
             <!-- 課程特色開始 -->
             <div class="container pt-5 pb-3">
                 <h2 class="font-medium fs-5 text-center font-secondary">感受身心，活在當下</h2>
@@ -540,49 +533,65 @@
                         <h2 class="fs-5 text-center font-secondary mb-7">課程推薦</h2>
                         <ul class="space-recommend-card-list">
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/flagged/photo-1573556291531-a5d957d7e4e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/flagged/photo-1573556291531-a5d957d7e4e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">基礎 Basic</h3>
                                 <p class="font-secondary">授課老師：Carol Tang</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1574454941059-9408c4d3f268?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">艾揚格 Iyengar</h3>
                                 <p class="font-secondary">授課老師：Kanae</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1611077094726-11cf1f992009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1611077094726-11cf1f992009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1500&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">哈達 Hatha</h3>
                                 <p class="font-secondary">授課老師：Kuzuha</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1601568870191-8c417f7e0077?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=668&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">寰宇 Universal</h3>
                                 <p class="font-secondary">授課老師：Kuzuha</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1573462239448-06b5cde9df64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1436&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1573462239448-06b5cde9df64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1436&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">雙人飛行 Arco Yoga</h3>
                                 <p class="font-secondary">授課老師：Kuzuha、Kanae</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1554245064-3ab88761ac5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1554245064-3ab88761ac5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">香氛 Aroma Yoga</h3>
                                 <p class="font-secondary">授課老師：Asa Chen</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1601568870227-099504d72c3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXxtMXpTbmlydjUxd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1601568870227-099504d72c3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8OXxtMXpTbmlydjUxd3x8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">阿斯坦加 Ashtanga</h3>
                                 <p class="font-secondary">授課老師：Kanae</p>
 
                             </li>
                             <li>
-                                <img class="mb-2" src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Course Picture">
+                                <img class="mb-2"
+                                    src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                                    alt="Course Picture">
                                 <h3 class="font-secondary font-medium fs-3">陰陽 Yin Yang</h3>
                                 <p class="font-secondary">授課老師：Asa Chen</p>
 
@@ -592,72 +601,216 @@
                 </div>
                 <!-- 課程推薦結束 -->
             </div>
-            <!-- 瑜伽空間結束 -->
+        </div>
+        <!-- 瑜伽空間結束 -->
+
+        <!-- 當月課表開始 -->
+        <div v-if="curriculumStatus">
+            <div class="container py-8 overflowx-scroll">
+                <h1 class="font-secondary fs-5 text-center mb-6">本月課表</h1>
+                <div class="bg-primary py-5 px-6 border-radius-round w-max mx-auto">
+                    <p class="font-white fs-3 mb-2 d-line-block">2021 07 月</p>
+                    <table  class="curriculum-table">
+                        <thead>
+                            <tr>
+                                <th>時間</th>
+                                <td>星期一</td>
+                                <td>星期二</td>
+                                <td>星期三</td>
+                                <td>星期四</td>
+                                <td>星期五</td>
+                                <td>星期六</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>0900-1000</th>
+                                <td>基礎 Basic</td>
+                                <td>基礎 Basic</td>
+                                <td></td>
+                                <td></td>
+                                <td>基礎 Basic</td>
+                                <td>基礎 Basic</td>
+                            </tr>
+                            <tr>
+                                <th>1000-1100</th>
+                                <td>艾揚格 Iyengar</td>
+                                <td>哈達 Hatha</td>
+                                <td>寰宇 Universal</td>
+                                <td>哈達 Hatha</td>
+                                <td>艾揚格 Iyengar</td>
+                                <td>雙人飛行</td>
+                            </tr>
+                            <tr>
+                                <th>1100-1200</th>
+                                <td>寰宇 Universal</td>
+                                <td>陰陽 Yin Yang</td>
+                                <td>艾揚格 Iyengar</td>
+                                <td>寰宇 Universal</td>
+                                <td></td>
+                                <td>艾揚格 Iyengar</td>
+                            </tr>
+                            <tr>
+                                <th>1200-1400</th>
+                                <td colspan="6">休息</td>
+                            </tr>
+                            <tr>
+                                <th>1400-1500</th>
+                                <td>雙人飛行</td>
+                                <td>基礎 Basic</td>
+                                <td>雙人飛行</td>
+                                <td>陰陽 Yin Yang</td>
+                                <td>雙人飛行</td>
+                                <td>基礎 Basic</td>
+                            </tr>
+                            <tr>
+                                <th>1500-1600</th>
+                                <td>陰陽 Yin Yang</td>
+                                <td>陰陽 Yin Yang</td>
+                                <td>基礎 Basic</td>
+                                <td>基礎 Basic</td>
+                                <td>哈達 Hatha</td>
+                                <td>香氛瑜珈</td>
+                            </tr>
+                            <tr>
+                                <th>1600-1700</th>
+                                <td>哈達 Hatha</td>
+                                <td>雙人飛行</td>
+                                <td>陰陽 Yin Yang</td>
+                                <td>香氛瑜珈</td>
+                                <td>艾揚格 Iyengar</td>
+                                <td>陰陽 Yin Yang</td>
+                            </tr>
+                            <tr>
+                                <th>1700-1800</th>
+                                <td>艾揚格 Iyengar</td>
+                                <td></td>
+                                <td>哈達 Hatha</td>
+                                <td>艾揚格 Iyengar</td>
+                                <td>寰宇 Universal</td>
+                                <td>哈達 Hatha</td>
+                            </tr>
+                            <tr>
+                                <th>1800-2000</th>
+                                <td colspan="6">休息</td>
+                            </tr>
+                            <tr>
+                                <th>2000-2100</th>
+                                <td></td>
+                                <td></td>
+                                <td>香氛瑜珈</td>
+                                <td>艾揚格 Iyengar</td>
+                                <td>香氛瑜珈</td>
+                                <td>雙人飛行</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <h2 class="fs-5 text-center my-6">上課須知</h2>
+                <ul class="curriculumn-requiremnt">
+                    <li>
+                        <span class="fs-6">1.</span>
+                        <p>
+                            空中瑜珈、香氛開放 2 天前電話預約上課。
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fs-6">2.</span>
+                        <p>
+                            如果有特殊體質、特殊狀況，請主動告知該堂教師。
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fs-6">3.</span>
+                        <p>
+                            取消預約或時間異動請於預約日前一天晚間 21:00 前告知。
+                        </p>
+                    </li>
+                    <li>
+                        <span class="fs-6">4.</span>
+                        <p>
+                            運動過程中若感到任何不適，請馬上停止且與老師商量討論。
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
         </div>
-            <!-- footer開始 -->
+        <!-- 當月課表結束 -->
 
-            <footer class="bg-secondary">
-                <div class="border-bottom-white py-4">
-                    <div
-                        class="container d-flex justify-content-between align-items-center flex-md-column align-items-md-start mb-md-2">
-                        <h2 class="fs-5 font-white">現在訂閱，獲得課程優惠碼！</h2>
-                        <div class="home-footer-email">
-                            <input type="text" placeholder="輸入您的電子信箱">
-                            <a href="#">訂閱</a>
-                        </div>
+        <!-- 右側釘選社群開始 -->
+        <ul class="home-sidebar-fixed">
+            <li><a href="#" class="link-secondary"><i class="fab fa-facebook fs-7 mb-2"></i></a></li>
+            <li><a href="#" class="link-secondary"><i class="fab fa-instagram fs-7 mb-2"></i></a></li>
+            <li><a href="#" class="link-secondary"><i class="fab fa-line fs-7 mb-2"></i></a></li>
+        </ul>
+        <!-- 右側釘選社群結束 -->
+        <!-- footer開始 -->
+
+        <footer class="bg-secondary">
+            <div class="border-bottom-white py-4">
+                <div
+                    class="container d-flex justify-content-between align-items-center flex-md-column align-items-md-start mb-md-2">
+                    <h2 class="fs-5 font-white">現在訂閱，獲得課程優惠碼！</h2>
+                    <div class="home-footer-email">
+                        <input type="text" placeholder="輸入您的電子信箱">
+                        <a href="#">訂閱</a>
                     </div>
                 </div>
-                <div class="container home-footer-moreInfo-pc py-4">
-                    <div>
-                        <a href="#" @click.prevent="showHomePage"><img
-                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-                                alt="Logo"></a>
-                        <ul>
-                            <li class="mt-2"><a @click.prevent="showCourseIntroPage" href="#"
-                                    class="link-white  font-light">課程介紹</a></li>
-                            <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
-                            <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
-                        </ul>
-                    </div>
-                    <p class="font-white align-self-end">
+            </div>
+            <div class="container home-footer-moreInfo-pc py-4">
+                <div>
+                    <a href="#" @click.prevent="showHomePage"><img
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></a>
+                    <ul>
+                        <li class="mt-2"><a @click.prevent="showCourseIntroPage" href="#"
+                                class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a href="#" class="link-white  font-light">瑜珈空間</a></li>
+                        <li class="mt-2"><a @click.prevent="showCurriculumPage" href="#"
+                                class="link-white  font-light">當月課表</a></li>
+                    </ul>
+                </div>
+                <p class="font-white align-self-end">
+                    © 2021. All Rights Reserved.
+                </p>
+                <ul class="d-flex">
+                    <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
+                </ul>
+            </div>
+            <div class="container home-footer-moreInfo-mobile  py-4">
+                <div>
+                    <a href="#" @click.prevent="showHomePage"><img
+                            src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
+                            alt="Logo"></a>
+                    <ul>
+                        <li class="mt-2"><a @click.prevent="showCourseIntroPage" href="#"
+                                class="link-white  font-light">課程介紹</a></li>
+                        <li class="mt-2"><a @click.prevent="showSpacePage" href="#"
+                                class="link-white  font-light">瑜珈空間</a></li>
+                        <li class="mt-2"><a @click.prevent="showCurriculumPage" href="#"
+                                class="link-white  font-light">當月課表</a></li>
+                    </ul>
+                    <p class="font-white mt-2">
                         © 2021. All Rights Reserved.
                     </p>
-                    <ul class="d-flex">
-                        <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
-                        <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
-                        <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
-                    </ul>
                 </div>
-                <div class="container home-footer-moreInfo-mobile  py-4">
-                    <div>
-                        <a href="#" @click.prevent="showHomePage"><img
-                                src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/yoga-week8/DOYOGA.png"
-                                alt="Logo"></a>
-                        <ul>
-                            <li class="mt-2"><a @click.prevent="showCourseIntroPage" href="#"
-                                    class="link-white  font-light">課程介紹</a></li>
-                            <li class="mt-2"><a @click.prevent="showSpacePage" href="#"
-                                    class="link-white  font-light">瑜珈空間</a></li>
-                            <li class="mt-2"><a href="#" class="link-white  font-light">當月課表</a></li>
-                        </ul>
-                        <p class="font-white mt-2">
-                            © 2021. All Rights Reserved.
-                        </p>
-                    </div>
-                    <ul class="d-flex">
-                        <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
-                        <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
-                        <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
-                    </ul>
-                </div>
+                <ul class="d-flex">
+                    <li><a href="#" class="link-white"><i class="fab fa-facebook fs-4 "></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-instagram fs-4  ms-2"></i></a></li>
+                    <li><a href="#" class="link-white"><i class="fab fa-line fs-4 ms-2"></i></a></li>
+                </ul>
+            </div>
 
-            </footer>
-            <!-- footer結束 -->
+        </footer>
+        <!-- footer結束 -->
 
-        </div>
-        <script src="https://unpkg.com/vue@next"></script>
-        <script src="all.js"></script>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="all.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,64 @@
+.curriculum-table{
+    color: $secondary;
+    tr{
+        border-bottom: 1px $primary solid; 
+        background-color: $white;
+        :nth-child(2n){
+            background-color: $light
+            ;
+        }
+        th{
+            padding: 8px 4px;
+            border-right: 1px $primary solid; 
+        }
+        td{
+            padding: 8px 8px;
+        }
+    }
+    td[colspan]{
+        background-color: $white;
+        text-align: center;
+    }
+}
+
+.curriculumn-requiremnt{
+    display: flex;
+    width: 710px;
+    margin: 0 auto;
+    flex-direction: column;
+    li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+    }
+    p{
+        width: 580px;
+        padding: 16px 24px;
+        border: 1px $primary solid;
+        border-radius: 16px;
+        margin-left: 24px;
+        @include mobile{
+            width: 305px;
+        }
+    }
+    :nth-child(n){
+        p{
+            color: $secondary;
+        }
+    }
+    :nth-child(2n){
+        align-self: flex-end;
+        p{
+            color: $white;
+            border: 1px $primary;
+            background-color: $primary;
+        }
+        @include mobile{
+            align-self: unset;
+        }
+    }
+    @include mobile{
+        width: auto;
+    }
+}
