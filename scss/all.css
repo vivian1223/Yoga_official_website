@@ -1700,6 +1700,7 @@ body {
 
 .link-primary {
   color: #C0A4A5;
+  display: inline-block;
 }
 
 .link-primary:hover {
@@ -1708,6 +1709,7 @@ body {
 
 .link-secondary {
   color: #907A7B;
+  display: inline-block;
 }
 
 .link-secondary:hover {
@@ -1716,6 +1718,7 @@ body {
 
 .link-danger {
   color: #DC3545;
+  display: inline-block;
 }
 
 .link-danger:hover {
@@ -1724,6 +1727,7 @@ body {
 
 .link-info {
   color: #6C757D;
+  display: inline-block;
 }
 
 .link-info:hover {
@@ -1732,6 +1736,7 @@ body {
 
 .link-light {
   color: #F5F0E7;
+  display: inline-block;
 }
 
 .link-light:hover {
@@ -1740,6 +1745,7 @@ body {
 
 .link-dark {
   color: #707070;
+  display: inline-block;
 }
 
 .link-dark:hover {
@@ -1748,6 +1754,7 @@ body {
 
 .link-white {
   color: #fff;
+  display: inline-block;
 }
 
 .link-white:hover {
