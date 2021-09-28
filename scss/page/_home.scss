@@ -24,15 +24,11 @@
   padding-top: 185px;
   padding-bottom: 185px;
   padding-left: 122px;
-  background-size: 80%;
-  @include tablet {
-    background-size: 110%;
-  }
+  background-size: cover;
   @include mobile {
     padding-left: 0;
     padding-top: 160px;
     padding-bottom: 160px;
-    background-size: 190%;
     background-position: center;
   }
 }
